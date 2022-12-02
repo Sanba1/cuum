@@ -96,7 +96,8 @@ while True:
             iterprob = 0
 
             try:
-@@ -70,24 +87,27 @@
+                N = int(temp)
+            except ValueError:
                 print("\nPlease enter an integer option.")
                 iterprob = 1
 
@@ -129,7 +130,10 @@ while True:
         try:
             # At this point, it is shown how every function in the whole program should run, and what inputs should be used for each of them
             turtlePlot(turtleGraph(LindIter(System, N), N))
-@@ -98,5 +118,7 @@
+        except:
+            print("\nLindenmayer System not chosen.")
+
+    # Option 3 to end the program
     if option == 3:
         print("\nGoodbye!")
         break
